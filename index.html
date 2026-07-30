@@ -115,7 +115,7 @@
         .description {
             font-size: 1.3rem;
             color: #f0e6ff;
-            margin: 25px 0 35px;
+            margin: 25px 0 30px;
             line-height: 1.6;
             text-shadow: 0 0 30px rgba(180, 100, 255, 0.2);
         }
@@ -130,6 +130,20 @@
             color: #b388ff;
             font-weight: 700;
             text-shadow: 0 0 20px rgba(180, 100, 255, 0.5);
+        }
+
+        /* Контейнер для виджета */
+        .widget-wrapper {
+            display: flex;
+            justify-content: center;
+            margin: 20px 0 30px;
+        }
+
+        .widget-wrapper iframe {
+            border-radius: 16px;
+            box-shadow: 0 8px 40px rgba(0, 0, 0, 0.5);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            max-width: 100%;
         }
 
         /* Кнопка Discord */
@@ -202,10 +216,6 @@
             letter-spacing: 0.3px;
         }
 
-        .contact-text span {
-            color: rgba(255, 255, 255, 0.7);
-        }
-
         .contact-buttons {
             display: flex;
             justify-content: center;
@@ -274,7 +284,7 @@
             }
             .description {
                 font-size: 1.05rem;
-                margin: 20px 0 30px;
+                margin: 20px 0 25px;
             }
             .discord-btn {
                 font-size: 1.05rem;
@@ -283,6 +293,10 @@
             }
             .discord-icon {
                 font-size: 1.4rem;
+            }
+            .widget-wrapper iframe {
+                width: 100% !important;
+                height: 400px !important;
             }
             .contact-buttons {
                 flex-direction: column;
@@ -302,6 +316,9 @@
             .glass-card { padding: 25px 15px; }
             h1 { font-size: 1.8rem; }
             .description { font-size: 0.95rem; }
+            .widget-wrapper iframe {
+                height: 350px !important;
+            }
         }
     </style>
 </head>
@@ -310,8 +327,20 @@
         <h1>БАЗА ФЕМБОЙЧИКОВ</h1>
         
         <div class="description">
-            Все <span class="highlight">18+ сливы</span>, арты, видео в нашем Discord сервере.<br>
+            Все <span class="highlight">18+ сливы</span>, арты, видео, а так же сообщество фембоев в нашем Discord сервере.<br>
             <span class="free">БЕСПЛАТНО И БЕЗ ЦЕНЗУРЫ</span>
+        </div>
+
+        <!-- === ВИДЖЕТ DISCORD === -->
+        <div class="widget-wrapper">
+            <iframe 
+                src="https://discord.com/widget?id=1528783848559607998&theme=dark" 
+                width="350" 
+                height="500" 
+                allowtransparency="true" 
+                frameborder="0" 
+                sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts">
+            </iframe>
         </div>
 
         <a href="https://discord.gg/E3R4QXsmH5" target="_blank" class="discord-btn">
